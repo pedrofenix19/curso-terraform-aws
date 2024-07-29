@@ -1,5 +1,5 @@
 resource "local_file" "file_to_upload" {
-  filename = "${path.module}/temp.txt"
+  filename = "${path.module}/${var.bucket_name}_temp.txt"
   content  = var.file_content
 }
 
